@@ -4,16 +4,15 @@
     <div id="welcome-splash">
       <div class="section">
 
-  <img class="wordmark" src="static/images/wordmarkmini.png" alt="Secret Hitler">
+      <img class="wordmark" src="static/images/wordmarkmini.png" alt="Secret Hitler"/>
 
-    <div class="section">
-      <h3 id="voice-unsupported" style="display:none;">Note: It looks like your browser does not yet support the web standard for voice chat. If you'd like this functionality, please try a browser such as <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a> to play instead.</h3>
-      <button id="start-playing" class="large">Play</button>
-    </div>
-  <p></p>
+        <div class="section">
+          <h3 id="voice-unsupported" style="display:none;">Note: It looks like your browser does not yet support the web standard for voice chat. If you'd like this functionality, please try a browser such as <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a> to play instead.</h3>
+          <button id="start-playing" class="large">Play</button>
+        </div>
         <p>
-        <h2>Secret Hitler is a social deduction game for 5–10 people about finding and stopping the Secret Hitler.</h2>
-        <h2>The majority of players are liberals. If they can learn to trust each other, they have enough votes to control the table and win the game. But some players are fascists. They will say whatever it takes to get elected, enact their agenda, and blame others for the fallout. The liberals must work together to discover the truth before the fascists install their cold-blooded leader and win the game.</h2>
+          <h2>Secret Hitler is a social deduction game for 5–10 people about finding and stopping the Secret Hitler.</h2>
+          <h2>The majority of players are liberals. If they can learn to trust each other, they have enough votes to control the table and win the game. But some players are fascists. They will say whatever it takes to get elected, enact their agenda, and blame others for the fallout. The liberals must work together to discover the truth before the fascists install their cold-blooded leader and win the game.</h2>
         </p>
       </div>
 
@@ -30,7 +29,7 @@
     </div>
 
     <div id="welcome-signin" style="display:none;">
-      <img class="wordmark" src="/images/wordmarkmini.png" alt="Secret Hitler">	
+      <img class="wordmark" src="/images/wordmarkmini.png" alt="Secret Hitler">
       <div id="s-signin-email" class="sd-signin">
         <form id="signin-start-form">
           <h2>Please enter your email to play:</h2>
@@ -38,8 +37,8 @@
           <button type="submit" class="large">submit</button>
         </form>
         A valid email is required to sign back in later
-  <!-- ••• GUEST ACCESS	<p>Alternatively, use a guest account to try it out:</p>
-        <button id="guest-signin" class="large">sign in as guest</button> .  -->
+         <!-- <p>Alternatively, use a guest account to try it out:</p>
+        <button id="guest-signin" class="large">sign in as guest</button> -->
       </div>
       <div id="s-signin-passkey" class="sd-signin">
         <form id="signin-passkey-form">
@@ -64,7 +63,7 @@
         <br>
         <p class="detail">Secret Hitler · © 2016 Goat, Wolf, &amp; Cabbage · CC SA-BY-NC 4.0
         <br>secrethitler.games · Paul Dolman-Darrall (RoughJustice) · Free to play community</p>
-      </div>  
+      </div>
     </div>
   </section>
 
