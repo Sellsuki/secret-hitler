@@ -10,10 +10,8 @@
           <h3 id="voice-unsupported" style="display:none;">Note: It looks like your browser does not yet support the web standard for voice chat. If you'd like this functionality, please try a browser such as <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a> to play instead.</h3>
           <button id="start-playing" class="large">Play</button>
         </div>
-        <p>
           <h2>Secret Hitler is a social deduction game for 5–10 people about finding and stopping the Secret Hitler.</h2>
           <h2>The majority of players are liberals. If they can learn to trust each other, they have enough votes to control the table and win the game. But some players are fascists. They will say whatever it takes to get elected, enact their agenda, and blame others for the fallout. The liberals must work together to discover the truth before the fascists install their cold-blooded leader and win the game.</h2>
-        </p>
       </div>
 
       <div class="section">
@@ -28,45 +26,7 @@
       <hr>
     </div>
 
-    <div id="welcome-signin" style="display:none;">
-      <img class="wordmark" src="/images/wordmarkmini.png" alt="Secret Hitler">
-      <div id="s-signin-email" class="sd-signin">
-        <form id="signin-start-form">
-          <h2>Please enter your email to play:</h2>
-          <input class="full input-signin" id="i-signin-email" type="email" placeholder="example@email.com" maxlength="254" /> <div class="input-error mini">Invalid email, please try again</div>
-          <button type="submit" class="large">submit</button>
-        </form>
-        A valid email is required to sign back in later
-         <!-- <p>Alternatively, use a guest account to try it out:</p>
-        <button id="guest-signin" class="large">sign in as guest</button> -->
-      </div>
-      <div id="s-signin-passkey" class="sd-signin">
-        <form id="signin-passkey-form">
-          <h2>Welcome back, <span class="signin-email-address">a@a.a</span>!</h2>
-          <h3 class="faint">Wrong email? <button class="signin-restart">try again</button></h3>
-
-          <input class="full input-signin" id="i-signin-passkey" placeholder="6-digit passkey" maxlength="6" autocomplete="none" /> <div class="input-error mini">Passkey must be exactly 6 digits (0-9)</div>
-          <button type="submit" class="large">submit</button>
-          <h3>Your passkey has been emailed to you. Please enter it to complete your sign in.</h3>
-        </form>
-      </div>
-      <div id="s-signin-username" class="sd-signin">
-        <h2>Welcome, <span class="signin-email-address">a@a.a</span>!</h2>
-        <h3 class="faint">Wrong email? <button class="signin-restart">try again</button></h3>
-        <p class="detail">(take care, a valid email is required to sign back in later)</p>
-
-        <input class="full input-signin" id="i-signin-username" placeholder="username" maxlength="12" /> <div class="input-error mini"></div>
-        <h3 class="faint">Provide 4 - 12 letters, numbers, and up to one space</h3>
-      </div>
-      <br>
-      <div class="section">
-        <br>
-        <p class="detail">Secret Hitler · © 2016 Goat, Wolf, &amp; Cabbage · CC SA-BY-NC 4.0
-        <br>secrethitler.games · Paul Dolman-Darrall (RoughJustice) · Free to play community</p>
-      </div>
-    </div>
   </section>
-
 </template>
 
 <script>
@@ -85,7 +45,7 @@ export default {
 #s-welcome {
   text-align: center;
 
-  overflow-y: scroll;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
