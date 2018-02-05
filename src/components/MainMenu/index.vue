@@ -8,7 +8,7 @@
 
         <div class="section">
           <h3 id="voice-unsupported" style="display:none;">Note: It looks like your browser does not yet support the web standard for voice chat. If you'd like this functionality, please try a browser such as <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a> to play instead.</h3>
-          <button id="start-playing" class="large">Play</button>
+          <button @click="$router.push('login')" id="start-playing" class="large">Play</button>
         </div>
           <h2>Secret Hitler is a social deduction game for 5–10 people about finding and stopping the Secret Hitler.</h2>
           <h2>The majority of players are liberals. If they can learn to trust each other, they have enough votes to control the table and win the game. But some players are fascists. They will say whatever it takes to get elected, enact their agenda, and blame others for the fallout. The liberals must work together to discover the truth before the fascists install their cold-blooded leader and win the game.</h2>
@@ -29,19 +29,8 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
-</script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 #s-welcome {
   text-align: center;
 
