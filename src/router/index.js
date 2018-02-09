@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MainMenu from '@/components/MainMenu'
-import Login from '@/components/login'
+import MainMenu from '../pages/MainMenu'
+import Login from '../pages/login'
 
 Vue.use(Router)
 
