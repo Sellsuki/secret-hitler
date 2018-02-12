@@ -6,16 +6,16 @@ import router from './router'
 import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
 import 'begeta/css/begeta.min.css'
-import Vuex from 'vuex'
+import store from './store'
 
 Vue.use(Buefy)
-Vue.use(Vuex)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
