@@ -20,7 +20,8 @@ export default new Router({
     {
       path: '/game/:roomId',
       name: 'Game',
-      component: Game
+      component: Game,
+      props: true
     }
   ]
 })
