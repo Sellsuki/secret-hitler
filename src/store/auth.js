@@ -1,8 +1,8 @@
-import firebaseConfig from '../../config/firebase'
+// import firebaseConfig from '../../config/firebase'
 import firebase from 'firebase'
 import router from '../router'
 
-firebase.initializeApp(firebaseConfig)
+// firebase.initializeApp(firebaseConfig)
 export default {
   namespaced: true,
   state: {
@@ -11,6 +11,7 @@ export default {
   },
   getters: {
     user: state => state.user,
+    uid: state => state.user.uid,
     route: state => state.route,
     isReady: state => state.isReady
   },

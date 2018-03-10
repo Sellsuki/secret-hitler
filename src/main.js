@@ -7,7 +7,10 @@ import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
 import 'begeta/css/begeta.min.css'
 import store from './store'
+import firebase from 'firebase'
+import firebaseConfig from '../config/firebase'
 
+Vue.prototype.$firebas = firebase.initializeApp(firebaseConfig)
 Vue.use(Buefy)
 Vue.config.productionTip = false
 
