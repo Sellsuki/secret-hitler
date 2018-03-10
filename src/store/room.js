@@ -1,4 +1,5 @@
 import firebase from 'firebase'
+import router from '../router'
 
 export default {
   namespaced: true,
@@ -7,11 +8,14 @@ export default {
   mutations: {},
   actions: {
     async create ({ rootGetters }) {
+      const uid = rootGetters['auth/uid']
       const rooms = firebase.database().ref('rooms')
       const newRoom = rooms.push()
       await newRoom.set({
-        members: [ rootGetters['auth/uid'] ]
+        owner: uid,
+        members: [ uid ]
       })
+      router.push({ name: 'Game', params: { roomId: newRoom.key } })
     }
   }
 }

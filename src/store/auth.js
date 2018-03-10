@@ -1,8 +1,6 @@
-// import firebaseConfig from '../../config/firebase'
 import firebase from 'firebase'
 import router from '../router'
 
-// firebase.initializeApp(firebaseConfig)
 export default {
   namespaced: true,
   state: {
