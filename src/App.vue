@@ -9,7 +9,9 @@ import { mapActions } from 'vuex'
 export default {
   name: 'App',
   methods: {
-    ...mapActions(['init'])
+    ...mapActions({
+      init: 'auth/init'
+    })
   },
   created () {
     this.init()

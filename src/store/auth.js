@@ -4,6 +4,7 @@ import router from '../router'
 
 firebase.initializeApp(firebaseConfig)
 export default {
+  namespaced: true,
   state: {
     isReady: false,
     user: {}

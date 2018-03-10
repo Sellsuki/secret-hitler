@@ -11,7 +11,9 @@
 import { mapActions } from 'vuex'
 export default {
   methods: {
-    ...mapActions(['login'])
+    ...mapActions({
+      login: 'auth/login'
+    })
   }
 }
 </script>
