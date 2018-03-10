@@ -31,7 +31,6 @@ export default {
             uid,
             fb: user.providerData[0]
           }
-          console.log(profile)
           commit('setUser', profile)
           router.push('/')
         } else {
