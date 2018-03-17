@@ -10,7 +10,7 @@ import store from './store'
 import firebase from 'firebase'
 import firebaseConfig from '../config/firebase'
 
-Vue.prototype.$firebas = firebase.initializeApp(firebaseConfig)
+Vue.prototype.$firebase = firebase.initializeApp(firebaseConfig)
 Vue.use(Buefy)
 Vue.config.productionTip = false
 

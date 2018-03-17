@@ -32,7 +32,10 @@ export default {
             fb: user.providerData[0]
           }
           commit('setUser', profile)
-          // router.push({ name: 'Home' })
+          // console.log(router.path)
+          // if (router.name === 'Login') {
+          router.push({ name: 'Home' })
+          // }
         } else {
           commit('setUser', {})
           router.push({ name: 'Login' })
