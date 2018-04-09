@@ -7,8 +7,11 @@ import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
 import 'begeta/css/begeta.min.css'
 import store from './store'
+import { sync } from 'vuex-router-sync'
 import firebase from 'firebase'
 import firebaseConfig from '../config/firebase'
+
+sync(store, router)
 
 Vue.prototype.$firebase = firebase.initializeApp(firebaseConfig)
 Vue.use(Buefy)

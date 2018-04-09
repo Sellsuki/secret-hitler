@@ -22,7 +22,7 @@ export default {
     }
   },
   actions: {
-    init ({ commit, dispatch }) {
+    init ({ commit, dispatch, rootState }) {
       firebase.auth().onAuthStateChanged((user) => {
         if (user && user.uid) {
           const { displayName, uid } = user
@@ -32,10 +32,9 @@ export default {
             fb: user.providerData[0]
           }
           commit('setUser', profile)
-          // console.log(router.path)
-          // if (router.name === 'Login') {
-          router.push({ name: 'Home' })
-          // }
+          if (rootState.route.name === 'Login') {
+            router.push({ name: 'Home' })
+          }
         } else {
           commit('setUser', {})
           router.push({ name: 'Login' })
