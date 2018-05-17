@@ -12,7 +12,8 @@ import { mapActions } from 'vuex'
 export default {
   methods: {
     ...mapActions({
-      create: 'room/create'
+      create: 'room/create',
+      findRoom: 'room/findRoom'
     }),
     async createRoom () {
       await this.create()
@@ -21,7 +22,13 @@ export default {
     join () {
       this.$dialog.prompt({
         message: 'Enter room id',
-        onConfirm: (value) => console.log(value)
+        inputAttrs: {
+          placeholder: '',
+          maxlength: 25
+        },
+        onConfirm: async (value) => {
+          await this.findRoom(value)
+        }
       })
     }
   }

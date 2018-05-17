@@ -25,11 +25,14 @@ export default {
       })
       router.push({ name: 'Game', params: { roomId: newRoom.key } })
     },
-    async findRoom ({ state }, roomId) {
+    async findRoom ({ dispatch, state }, roomId) {
       const room = await firebase.database().ref(`rooms/${roomId}`).once('value')
-      if (room) {
-
+      if (room.val()) {
+        await dispatch('joinRoom', roomId)
       }
+    },
+    async joinRoom (roomId) {
+      console.log(roomId)
     }
   }
 }
