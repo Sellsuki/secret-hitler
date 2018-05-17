@@ -25,8 +25,11 @@ export default {
       })
       router.push({ name: 'Game', params: { roomId: newRoom.key } })
     },
-    async fetchRoomDetail () {
+    async findRoom ({ state }, roomId) {
+      const room = await firebase.database().ref(`rooms/${roomId}`).once('value')
+      if (room) {
 
+      }
     }
   }
 }
