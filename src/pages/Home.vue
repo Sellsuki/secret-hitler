@@ -19,7 +19,10 @@ export default {
       // this.router.push({})
     },
     join () {
-      console.log('join')
+      this.$dialog.prompt({
+        message: 'Enter room id',
+        onConfirm: (value) => console.log(value)
+      })
     }
   }
 }
