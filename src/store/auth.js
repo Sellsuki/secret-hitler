@@ -48,6 +48,9 @@ export default {
     },
     logout () {
       firebase.auth().signOut()
+    },
+    canEnterRoom (roomId) {
+
     }
   }
 }
